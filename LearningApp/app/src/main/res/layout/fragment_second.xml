@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_primary_dark">
+
+        <Button
+            android:id="@+id/aplusb"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/aplusb"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/axb"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/axb"
+            android:textSize="15sp"
+            android:layout_below="@id/aplusb"/>
+
+        <Button
+            android:id="@+id/adivb"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/adivb"
+            android:textSize="15sp"
+            android:layout_below="@id/axb"/>
+
+        <Button
+            android:id="@+id/topBottomMult"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/topBottomMult"
+            android:textSize="15sp"
+            android:layout_below="@id/adivb" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

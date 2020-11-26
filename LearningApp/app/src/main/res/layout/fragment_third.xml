@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment">
+
+    <RelativeLayout
+        android:id="@+id/thirdFragLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_primary_dark">
+
+        <EditText
+            android:id="@+id/editTextQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="100sp"
+            android:gravity="center"
+            android:inputType="none"
+            android:focusable="false"
+            android:hint=""
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:id="@+id/editTextAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextQuestion"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:hint=""
+            android:inputType="number"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nextQ"
+            android:textSize="30sp"
+            android:id="@+id/nextQ"
+            android:layout_below="@+id/editTextAnswer"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
